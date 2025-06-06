@@ -22,8 +22,6 @@ if (randomNumber1 > randomNumber2) {
 }
 }
 
-// Run on button click
 document.getElementById("rollButton").addEventListener("click", rollDice);
 
-// Run once on page load
 rollDice();
