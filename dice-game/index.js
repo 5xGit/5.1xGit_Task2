@@ -1,3 +1,4 @@
+function rollDice(){
 var randomNumber1 = Math.floor(Math.random() * 6 + 1); 
 var randomDiceImage = "images/dice" + randomNumber1 + ".png";
 
@@ -19,3 +20,8 @@ if (randomNumber1 > randomNumber2) {
 } else {
     msg.innerHTML = "It's a draw!";
 }
+}
+
+document.getElementById("rollButton").addEventListener("click", rollDice);
+
+rollDice();
